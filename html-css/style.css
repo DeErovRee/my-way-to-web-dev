@@ -7,6 +7,8 @@ body {
   font-family: sans-serif;
 }
 
+/* Стили страницы "главная" */
+
 .block__header {
   border: 3px solid darkred;
   border-collapse: collapse;
@@ -42,7 +44,7 @@ body {
   width: 450px;
 }
 
-.block__p {
+.block__main__text {
   border: 3px solid darkred;
   margin: 50px;
   padding: 15px;
@@ -75,6 +77,53 @@ body {
   margin: 15px 0px;
   padding: 10px;
 }
+
+/* Стили страницы "контакты" */
+
+.block__contacts {
+  border: 3px solid purple;
+  width: 40%;
+  float: left;
+  padding: 15px;
+  margin: 50px;
+}
+
+.block__form {
+  border: 3px solid lightgreen;
+  width: 40%;
+  float: right;
+  padding: 15px;
+  margin: 50px;
+}
+
+.block__footer_c {
+  border: 3px solid red;
+  clear: both;
+  padding: 0px 15px;
+}
+
+.block__main {
+  border: 3px solid red;
+}
+
+.line_c {
+  border-top: 3px solid grey;
+  margin: 15px 50px;
+  clear: both;
+}
+
+.block__header_c {
+  border: 3px solid purple;
+  margin: 0px 50px;
+}
+
+.block__text_c {
+  border: 3px solid brown;
+  margin: 50px 0px;
+  padding: 15px;
+}
+
+/* Стили текста */
 
 .text {
   font-size: 16px;
