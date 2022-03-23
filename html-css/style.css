@@ -1,7 +1,50 @@
-p {
-  color: cornflowerblue;
+body {
+  font-family: sans-serif;
 }
 
-h1 {
-  background-color: darkgrey;
+.text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #1F3F68;
+}
+
+.h1-text {
+  font-size: 64px;
+  color: #1F3F68;
+}
+
+.h2-text-contacts {
+  font-weight: 500;
+  font-size: 44px;
+  text-align: center;
+}
+
+.h3-text {
+  font-size: 36px;
+  text-align: center;
+}
+
+.h4-text {
+  font-size: 20px;
+  line-height: 30px;
+  color: #1F3F68;
+}
+
+.text-area {
+  border: 1px solid #356EAD;
+  box-sizing: border-box;
+  border-radius: 10px;
+  opacity: 0.4;
+}
+
+.b-submit {
+  background: #5A98D0;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
