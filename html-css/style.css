@@ -1,16 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
+}
+
+.block__header {
+  border: 3px solid darkred;
+  border-collapse: collapse;
+  margin: 0px 0px 50px;
+}
+
+.block__content {
+  border: 3px solid purple;
+  margin: 0px 50px;
+}
+
+.block__menu {
+  border: 3px solid green;
+  margin: 20px 0px;
+  padding: 15px;
+}
+
+.block__h1 {
+  width: 550px;
+  border: 3px solid lightskyblue;
+  margin: 20px 0px;
+  padding: 15px;
+}
+
+.block__cardholder {
+  border: 3px solid green;
+  margin: 20px 0px;
+}
+
+.block__card {
+  border: 3px solid violet;
+  margin: 20px 20px 20px 0px;
+  width: 450px;
+}
+
+.block__p {
+  border: 3px solid darkred;
+  margin: 50px;
+  padding: 15px;
+}
+
+.block__footer {
+  border: 3px solid red;
+  margin: 50px 0px 0px;
+}
+
+.block_connection {
+  border: 3px solid blanchedalmond;
+  margin: 10px 50px;
+  padding: 15px;
+}
+
+.line {
+  border-top: 3px solid grey;
+  margin: 15px 50px;
+}
+
+.block__callback {
+  border: 3px solid lightgreen;
+  margin: 15px 50px 0px;
+  padding: 15px 0px;
+}
+
+.block__rights {
+  border: 3px solid grey;
+  margin: 15px 0px;
+  padding: 10px;
 }
 
 .text {
   font-size: 16px;
   line-height: 26px;
-  color: #1F3F68;
+  color: #1f3f68;
 }
 
 .h1-text {
   font-size: 64px;
-  color: #1F3F68;
+  color: #1f3f68;
 }
 
 .h2-text-contacts {
@@ -27,24 +101,29 @@ body {
 .h4-text {
   font-size: 20px;
   line-height: 30px;
-  color: #1F3F68;
+  color: #1f3f68;
 }
 
 .text-area {
-  border: 1px solid #356EAD;
+  border: 1px solid #356ead;
   box-sizing: border-box;
   border-radius: 10px;
   opacity: 0.4;
 }
 
 .b-submit {
-  background: #5A98D0;
+  background: #5a98d0;
   box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
   border-radius: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline;
 }
