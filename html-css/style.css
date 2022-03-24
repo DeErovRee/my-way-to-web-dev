@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -11,8 +16,8 @@ body {
 
 .block__header {
   border: 3px solid darkred;
-  border-collapse: collapse;
-  margin: 0px 0px 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .block__content {
@@ -20,14 +25,24 @@ body {
   margin: 0px 50px;
 }
 
+.block__central {
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+}
+
 .block__menu {
   border: 3px solid green;
   margin: 20px 0px;
   padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .block__h1 {
-  width: 550px;
+  width: 510px;
   border: 3px solid lightskyblue;
   margin: 20px 0px;
   padding: 15px;
@@ -35,13 +50,16 @@ body {
 
 .block__cardholder {
   border: 3px solid green;
-  margin: 20px 0px;
+  margin: 15px 0px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .block__card {
   border: 3px solid violet;
-  margin: 20px 20px 20px 0px;
-  width: 450px;
+  margin: 15px 0px;
+  width: 359px;
+  height: 200px;
 }
 
 .block__main__text {
@@ -52,13 +70,14 @@ body {
 
 .block__footer {
   border: 3px solid red;
-  margin: 50px 0px 0px;
+  /* margin: px 0px 0px; */
+  width: 1140px;
 }
 
 .block_connection {
   border: 3px solid blanchedalmond;
   margin: 10px 50px;
-  padding: 15px;
+  padding: 15px 0px;
 }
 
 .line {
@@ -70,12 +89,27 @@ body {
   border: 3px solid lightgreen;
   margin: 15px 50px 0px;
   padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .block__rights {
   border: 3px solid grey;
   margin: 15px 0px;
   padding: 10px;
+  width: 100%;
+}
+
+.block__p {
+  border: 3px solid black;
+  width: 425px;
+}
+
+.block__down {
+  border: 3px solid rgb(67, 177, 221);
+  display: flex;
+  justify-content: center;
 }
 
 /* Стили страницы "контакты" */
@@ -83,10 +117,11 @@ body {
 .block__flex__c {
   border: 3px solid black;
   margin: 50px;
-  padding: 15px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1140px;
 }
 
 .block__contacts {
@@ -99,6 +134,11 @@ body {
   border: 3px solid lightgreen;
   width: 40%;
   padding: 15px;
+}
+
+.block__map {
+  border: 3px solid blue;
+  width: 100%;
 }
 
 .block__footer_c {
@@ -150,6 +190,11 @@ body {
 .h3-text {
   font-size: 36px;
   text-align: center;
+}
+
+.h3 {
+  border: 3px solid black;
+  width: 495px;
 }
 
 .h4-text {
