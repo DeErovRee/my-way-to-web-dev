@@ -80,20 +80,25 @@ body {
 
 /* Стили страницы "контакты" */
 
+.block__flex__c {
+  border: 3px solid black;
+  margin: 50px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
 .block__contacts {
   border: 3px solid purple;
   width: 40%;
-  float: left;
   padding: 15px;
-  margin: 50px;
 }
 
 .block__form {
   border: 3px solid lightgreen;
   width: 40%;
-  float: right;
   padding: 15px;
-  margin: 50px;
 }
 
 .block__footer_c {
