@@ -50,9 +50,9 @@ body {
 }
 
 .block__central {
-  border: 3px solid black;
   display: flex;
   justify-content: center;
+  height: 2000px;
 }
 
 .block__h1 {
@@ -63,15 +63,16 @@ body {
 }
 
 .block__cardholder {
-  border: 3px solid green;
   display: flex;
   justify-content: space-between;
 }
 
 .block__card {
-  border: 3px solid violet;
   width: 359px;
-  height: 200px;
+  height: 480.13px;
+  background: #ffffff;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
 }
 
 .block__main__text {
@@ -214,6 +215,13 @@ body {
 .h3-text {
   font-size: 36px;
   text-align: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  font-family: sans-serif, "Roboto";
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
 }
 
 .h3 {
