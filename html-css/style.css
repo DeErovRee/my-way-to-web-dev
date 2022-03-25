@@ -1,71 +1,68 @@
+/* Параметры для всех страниц */
+
 * {
   margin: 0;
   padding: 0;
-}
-
-.container {
-  width: 1140px;
-  margin: 0 auto;
 }
 
 body {
   font-family: sans-serif;
 }
 
-/* Стили страницы "главная" */
+/* Стили блоков страницы "Главная" */
 
-.block__header {
-  border: 3px solid darkred;
+.block__top {
   display: flex;
   justify-content: center;
+  background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+  height: 768px;
 }
 
-.block__content {
-  border: 3px solid purple;
-  margin: 0px 50px;
-}
+  .container {
+    width: 1140px;
+    margin: 0 auto;
+  }
+
+  .block__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 34px;
+  }
+
+  .block__text {
+    width: 510px;
+    margin-top: 115px;
+    margin-bottom: 32px;
+  }
 
 .block__central {
   border: 3px solid black;
   display: flex;
   justify-content: center;
-  margin: 15px 0px;
-}
-
-.block__menu {
-  border: 3px solid green;
-  margin: 20px 0px;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .block__h1 {
   width: 510px;
   border: 3px solid lightskyblue;
-  margin: 20px 0px;
-  padding: 15px;
+  margin-top: 115px;
+  margin-bottom: 32px;
 }
 
 .block__cardholder {
   border: 3px solid green;
-  margin: 15px 0px;
   display: flex;
   justify-content: space-between;
 }
 
 .block__card {
   border: 3px solid violet;
-  margin: 15px 0px;
   width: 359px;
   height: 200px;
 }
 
 .block__main__text {
   border: 3px solid darkred;
-  margin: 50px;
-  padding: 15px;
 }
 
 .block__footer {
@@ -99,11 +96,6 @@ body {
   margin: 15px 0px;
   padding: 10px;
   width: 100%;
-}
-
-.block__p {
-  border: 3px solid black;
-  width: 425px;
 }
 
 .block__down {
@@ -177,8 +169,27 @@ body {
 }
 
 .h1-text {
+  font-family: sans-serif, 'Roboto';
   font-size: 64px;
   color: #1f3f68;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: 0.04em;
+  margin-bottom: 32px;
+}
+
+
+.p-text {
+  width: 425px;
+  font-family: sans-serif, 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #1F3F68;
+  opacity: 0.6;
 }
 
 .h2-text-contacts {
@@ -222,7 +233,23 @@ body {
   text-transform: uppercase;
 }
 
-ul li {
-  list-style-type: none;
+ol li {
   display: inline;
+}
+
+/* Стили кнопок */
+
+.button-top {
+  padding: 15px 50px;
+  background: #5A98D0;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border-radius: 10px;
+  font-family: sans-serif, 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  margin-top: 86px;
 }
