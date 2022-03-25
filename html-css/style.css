@@ -13,28 +13,41 @@ body {
 
 .block__top {
   display: flex;
-  justify-content: center;
-  background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+  background: linear-gradient(
+    0deg,
+    #ebf3fb 8.84%,
+    rgba(152, 195, 232, 0) 31.12%
+  );
   height: 768px;
 }
 
-  .container {
-    width: 1140px;
-    margin: 0 auto;
-  }
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
 
-  .block__menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 34px;
-  }
+.top__box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-image: url(img/background-top.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
 
-  .block__text {
-    width: 510px;
-    margin-top: 115px;
-    margin-bottom: 32px;
-  }
+.block__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 34px;
+}
+
+.block__text {
+  margin-top: 115px;
+  flex-grow: 1;
+}
 
 .block__central {
   border: 3px solid black;
@@ -169,7 +182,8 @@ body {
 }
 
 .h1-text {
-  font-family: sans-serif, 'Roboto';
+  width: 510px;
+  font-family: sans-serif, "Roboto";
   font-size: 64px;
   color: #1f3f68;
   font-weight: 300;
@@ -179,16 +193,15 @@ body {
   margin-bottom: 32px;
 }
 
-
 .p-text {
   width: 425px;
-  font-family: sans-serif, 'Roboto';
+  font-family: sans-serif, "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.05em;
-  color: #1F3F68;
+  color: #1f3f68;
   opacity: 0.6;
 }
 
@@ -241,15 +254,15 @@ ol li {
 
 .button-top {
   padding: 15px 50px;
-  background: #5A98D0;
+  background: #5a98d0;
   box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
   border-radius: 10px;
-  font-family: sans-serif, 'Roboto';
+  font-family: sans-serif, "Roboto";
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 86px;
 }
