@@ -52,7 +52,6 @@ body {
 .block__central {
   display: flex;
   justify-content: center;
-  height: 2000px;
 }
 
 .block__h1 {
@@ -62,17 +61,35 @@ body {
   margin-bottom: 32px;
 }
 
+.block__content {
+  padding-top: 64px;
+}
+
 .block__cardholder {
   display: flex;
   justify-content: space-between;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  flex-wrap: wrap;
 }
 
 .block__card {
+  padding: 44px 32px;
   width: 359px;
   height: 480.13px;
   background: #ffffff;
   box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
   border-radius: 10px;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.card__img {
+  align-self: center;
+  margin-bottom: 51px;
 }
 
 .block__main__text {
@@ -187,7 +204,7 @@ body {
   font-family: sans-serif, "Roboto";
   font-size: 64px;
   color: #1f3f68;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 64px;
   line-height: 74px;
   letter-spacing: 0.04em;
@@ -215,11 +232,8 @@ body {
 .h3-text {
   font-size: 36px;
   text-align: center;
-  margin-top: 64px;
-  margin-bottom: 64px;
   font-family: sans-serif, "Roboto";
   font-weight: 300;
-  font-size: 36px;
   line-height: 46px;
   letter-spacing: 0.05em;
 }
@@ -232,7 +246,20 @@ body {
 .h4-text {
   font-size: 20px;
   line-height: 30px;
+  /* font-family: sans-serif, "Roboto"; */
+  font-weight: 400;
+  letter-spacing: 0.05em;
   color: #1f3f68;
+  margin-bottom: 14px;
+}
+
+.card__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #5a98d0;
 }
 
 .text-area {
