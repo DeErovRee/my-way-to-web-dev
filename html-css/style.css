@@ -9,6 +9,11 @@ body {
   font-family: sans-serif;
 }
 
+.text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #1f3f68;
+}
 /* Стили блоков страницы "Главная" */
 
 .block__top {
@@ -52,6 +57,7 @@ body {
 .block__central {
   display: flex;
   justify-content: center;
+  margin-bottom: 112px;
 }
 
 .block__h1 {
@@ -92,47 +98,89 @@ body {
   margin-bottom: 51px;
 }
 
-.block__main__text {
-  border: 3px solid darkred;
+.prefooter {
+  display: flex;
+  margin: 0 auto;
+  width: 1140px;
+  padding: 91px 0px 96px;
+}
+
+.block__connection {
+  width: 100%;
+}
+
+.block_button {
+  width: 100%;
+  padding: 74px 0px 30px 383px;
+}
+
+.button__prefooter {
+  width: 236.63px;
+  height: 56px;
+  background: #5a98d0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
 .block__footer {
-  border: 3px solid red;
-  /* margin: px 0px 0px; */
+  margin: 0 auto;
   width: 1140px;
 }
 
-.block_connection {
-  border: 3px solid blanchedalmond;
-  margin: 10px 50px;
-  padding: 15px 0px;
+.footer__text_h {
+  margin-bottom: 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.footer__text_p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
 }
 
 .line {
-  border-top: 3px solid grey;
-  margin: 15px 50px;
+  border-bottom: 3px solid #fff;
 }
 
 .block__callback {
-  border: 3px solid lightgreen;
-  margin: 15px 50px 0px;
-  padding: 15px 0px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .block__rights {
-  border: 3px solid grey;
-  margin: 15px 0px;
-  padding: 10px;
   width: 100%;
+  padding-bottom: 64px;
 }
 
 .block__down {
-  border: 3px solid rgb(67, 177, 221);
+  background-color: #316099;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+.list__text {
+  padding: 64px 0 64px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
 }
 
 /* Стили страницы "контакты" */
@@ -174,6 +222,59 @@ body {
   border: 3px solid red;
 }
 
+.project__item {
+  position: relative;
+  flex-grow: 1;
+}
+
+.project__item_margin {
+  margin-right: 32px;
+}
+
+.project__parent {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.project__text {
+  font-size: 32px;
+  line-height: 46px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  position: absolute;
+  color: #fff;
+  top: 64px;
+  right: 64px;
+}
+
+.project__text_mini_left {
+  font-size: 28px;
+  line-height: 46px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  position: absolute;
+  color: #fff;
+  top: 32px;
+  left: 32px;
+}
+
+.project__text_mini_right {
+  font-size: 28px;
+  line-height: 46px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  position: absolute;
+  color: #fff;
+  top: 32px;
+  right: 264px;
+}
+
+.project__img {
+  width: 100%;
+}
+
 .line_c {
   border-top: 3px solid grey;
   margin: 15px 50px;
@@ -193,10 +294,12 @@ body {
 
 /* Стили текста */
 
-.text {
-  font-size: 16px;
-  line-height: 26px;
-  color: #1f3f68;
+.text_project {
+  width: 75%;
+  margin: 32px auto 64px;
+  color: #222222;
+  opacity: 1;
+  text-align: center;
 }
 
 .h1-text {
@@ -239,7 +342,6 @@ body {
 }
 
 .h3 {
-  border: 3px solid black;
   width: 495px;
 }
 
