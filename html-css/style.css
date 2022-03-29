@@ -57,7 +57,6 @@ body {
 .block__central {
   display: flex;
   justify-content: center;
-  margin-bottom: 112px;
 }
 
 .block__h1 {
@@ -102,16 +101,13 @@ body {
   display: flex;
   margin: 0 auto;
   width: 1140px;
-  padding: 91px 0px 96px;
+  padding-bottom: 96px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .block__connection {
   width: 100%;
-}
-
-.block_button {
-  width: 100%;
-  padding: 74px 0px 30px 383px;
 }
 
 .button__prefooter {
@@ -125,6 +121,7 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
+  border: none;
 }
 
 .block__footer {
@@ -140,6 +137,8 @@ body {
   line-height: 46px;
   letter-spacing: 0.05em;
   color: #ffffff;
+  width: 340px;
+  text-align: left;
 }
 
 .footer__text_p {
@@ -149,21 +148,16 @@ body {
   line-height: 26px;
   letter-spacing: 0.05em;
   color: #ffffff;
+  opacity: 0.6;
 }
 
-.line {
-  border-bottom: 3px solid #fff;
-}
-
-.block__callback {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+hr {
+  opacity: 0.6;
 }
 
 .block__rights {
   width: 100%;
-  padding-bottom: 64px;
+  padding-top: 64px;
 }
 
 .block__down {
@@ -171,16 +165,46 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: 112px;
+  padding-bottom: 64px;
+  padding-top: 91px;
 }
 
-.list__text {
-  padding: 64px 0 64px;
-  font-style: normal;
+.list {
+  display: flex;
+  justify-content:space-between;
+  list-style-type: none;
+  margin-top: 64px;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.05em;
-  color: #ffffff;
+  color: #FFFFFF;
+}
+
+.list__text {
+  flex-grow: 1;
+  margin-right: 32px;
+  display: flex;
+  flex-basis: 33.3333%;
+}
+
+.list__text:first-child::before {
+  content: 'A. ';
+  display: block;
+  margin-right: 16px;
+}
+
+.list__text:nth-child(2)::before {
+  content: 'T. ';
+  display: block;
+  margin-right: 16px;
+}
+
+.list__text:last-child::before {
+  content: 'E. ';
+  display: block;
+  margin-right: 16px;
 }
 
 /* Стили страницы "контакты" */
