@@ -9,6 +9,12 @@ body {
   font-family: sans-serif;
 }
 
+.container {
+  /* строка: 10 */
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 .text {
   font-size: 16px;
   line-height: 26px;
@@ -19,18 +25,12 @@ body {
 /* Стили блоков страницы "Главная" */
 
 .top {
-  height: 768px;
+  min-height: 768px;
   background: linear-gradient(
     0deg,
     #ebf3fb 8.84%,
     rgba(152, 195, 232, 0) 31.12%
   );
-}
-
-.container {
-  /* строка: 10 */
-  width: 1140px;
-  margin: 0 auto;
 }
 
 .top__box {
@@ -43,15 +43,17 @@ body {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  margin-top: 42px;
+  padding-top: 42px;
+  align-items: center;
 }
 
 .top__info {
-  margin-top: 115px;
+  padding-top: 115px;
   flex-grow: 1;
   background-image: url(img/background-top.svg);
   background-repeat: no-repeat;
   background-position: right center;
+  background-size: 44%;
 }
 
 .what-we-do {
@@ -238,6 +240,8 @@ hr {
   border: 3px solid red;
 } */
 
+
+
 .project__item {
   position: relative;
   flex-grow: 1;
@@ -265,23 +269,18 @@ hr {
   right: 64px;
 }
 
-.project__text_mini-l {
+.project__text_mini {
   right: auto;
   left: 32px;
   top: 32px;
   text-align: left;
 }
 
-.project__text_mini-r {
-  right: 32px;
-  left: auto;
-  top: 32px;
-  text-align: right;
-}
-
 .project__img {
   width: 100%;
 }
+
+
 
 /* .line_c {
   border-top: 3px solid grey;
@@ -324,6 +323,7 @@ hr {
 
 .top__text {
   width: 425px;
+  margin-bottom: 87px;
 }
 
 /* .h2-text-contacts {
@@ -415,4 +415,95 @@ hr {
   letter-spacing: 0.04em;
   color: #ffffff;
   margin-top: 86px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .top__info {
+    background-position: right center;
+  }
+
+  .card-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 667px) {
+  .header {
+    padding-top: 24px;
+  }
+
+  .top {
+    min-height: 376px;
+    padding-bottom: 41px;
+    box-sizing: border-box;
+  }
+
+  .top__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 36px;
+    background-image: none;
+  }
+
+  .top__heading {
+    width: 100%;
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .top__text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .top__button {
+    font-size: 12px;
+    line-height: 26px;
+    padding: 0 8px;
+  }
+
+  .heading {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .what-we-do {
+    padding-top: 48px;
+  }
+
+  .card-box {
+    padding-top: 32px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .text_project {
+    width: 100%;
+  }
+
+  .project__text {
+    font-size: 16px;
+    line-height: 19px;
+    top: 16px;
+    right: 16px;
+  }
+
+  .project__text_mini-l {
+    left: 16px;
+  }
 }
