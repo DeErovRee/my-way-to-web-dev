@@ -10,7 +10,6 @@ body {
 }
 
 .container {
-  /* строка: 10 */
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -104,7 +103,6 @@ body {
 }
 
 .footer__top {
-  /* строка: 218 */
   padding-bottom: 96px;
   display: flex;
   justify-content: space-between;
@@ -142,7 +140,6 @@ hr {
 }
 
 .footer {
-  /* строка: 211 */
   background-color: #316099;
   display: flex;
   justify-content: center;
@@ -228,16 +225,6 @@ hr {
   width: 100%;
 }
 
-/* .block__footer_c {
-  border: 3px solid red;
-  clear: both;
-  padding: 0px 15px;
-} */
-
-/* .block__main {
-  border: 3px solid red;
-} */
-
 .project__item {
   position: relative;
   flex-grow: 1;
@@ -277,25 +264,6 @@ hr {
   width: 100%;
 }
 
-/* .line_c {
-  border-top: 3px solid grey;
-  margin: 15px 50px;
-  clear: both;
-} */
-
-/* .block__header_c {
-  border: 3px solid purple;
-  margin: 0px 50px;
-} */
-
-/* .block__text_c {
-  border: 3px solid brown;
-  margin: 50px 0px;
-  padding: 15px;
-} */
-
-/* Стили текста */
-
 .text_project {
   width: 75%;
   margin: 32px auto 64px;
@@ -320,12 +288,6 @@ hr {
   width: 425px;
   margin-bottom: 87px;
 }
-
-/* .h2-text-contacts {
-  font-weight: 500;
-  font-size: 44px;
-  text-align: center;
-} */
 
 .heading {
   font-size: 36px;
@@ -357,7 +319,6 @@ hr {
 .h4-text {
   font-size: 20px;
   line-height: 30px;
-  /* font-family: sans-serif, "Roboto"; */
   font-weight: 400;
   letter-spacing: 0.05em;
   color: #1f3f68;
@@ -390,12 +351,6 @@ hr {
   color: #ffffff;
   text-transform: uppercase;
 }
-
-/* ol li {
-  display: inline;
-} */
-
-/* Стили кнопок */
 
 .top__button {
   padding: 15px 50px;
