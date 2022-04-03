@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: sans-serif, "Roboto";
 }
 
 .container {
@@ -15,6 +15,7 @@ body {
 }
 
 .text {
+  text-decoration: none;
   font-size: 16px;
   line-height: 26px;
   color: #1f3f68;
@@ -207,18 +208,15 @@ body {
   box-sizing: border-box;
   border-radius: 10px;
   opacity: 0.4;
+  width: 100%;
+  height: 72px;
+  padding: 21px 36px;
+  margin: 8px 0px 32px;
 }
 
-.b-submit {
-  background: #5a98d0;
-  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-  border-radius: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
+.text-area_message {
+  height: 144px;
+  margin-bottom: 72px;
 }
 
 .top__button {
@@ -342,10 +340,10 @@ hr {
 /* Стили страницы "контакты" */
 
 .top_c {
-    min-height: 400px;
-    /* background-image: url(img/background-top-contacts.svg);
-    background-repeat: no-repeat;
-    background-position: center; */
+  min-height: 400px;
+  background-image: url(img/background-top-contacts.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .header_c {
@@ -367,56 +365,88 @@ hr {
   text-align: center;
   width: 510px;
   font-family: sans-serif, "Roboto";
-  font-size: 64px;
-  color: #1f3f68;
-  font-weight: 100;
-  font-size: 64px;
+  font-weight: 500;
+  font-size: 44px;
   line-height: 74px;
+  text-align: center;
   letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
 .top__text_c {
-  text-align: center;
   margin-top: 16px;
   margin-bottom: 45px;
-  width: 425px;
+  width: 780px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.block__flex__c {
-  border: 3px solid black;
-  margin: 50px;
+.block__form-contacts {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  max-width: 1140px;
+  margin: 57px 90px 96px 90px;
+  justify-content: space-between;
 }
 
 .block__contacts {
-  border: 3px solid purple;
   width: 40%;
-  padding: 15px;
+  margin-right: 8px;
+  padding: 56px;
+}
+
+.header-contacts {
+  list-style-type: none;
+}
+
+.li__margin {
+  margin-bottom: 16px;
 }
 
 .block__form {
   height: 800px;
   width: 540px;
   padding: 56px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
   border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.b-submit {
+  background: #5a98d0;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+  width: 100%;
+  height: 72px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  border: none;
 }
 
 .form__text {
   text-transform: uppercase;
+  font-weight: 600;
   font-size: 20px;
   line-height: 30px;
-  letter-spacing: 0.04em;
-  color: #1F3F68;
+  letter-spacing: 0;
+  color: #1f3f68;
+  margin-bottom: 48px;
+}
+
+.form__text-contacts {
+  margin: 24px 0px 40px;
 }
 
 .block__map {
-  border: 3px solid blue;
   width: 100%;
 }
 
