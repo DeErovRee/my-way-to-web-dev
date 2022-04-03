@@ -12,6 +12,8 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .text {
@@ -183,7 +185,7 @@ body {
 }
 
 .footer__text {
-  width: 495px;
+  width: 100%;
 }
 
 .h4-text {
@@ -251,6 +253,7 @@ body {
 }
 
 .footer__button {
+  margin-left: 400px;
   background: #5a98d0;
   font-weight: 400;
   font-size: 16px;
@@ -340,7 +343,6 @@ hr {
 /* Стили страницы "контакты" */
 
 .top_c {
-  min-height: 400px;
   background-image: url(img/background-top-contacts.svg);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -376,7 +378,6 @@ hr {
 .top__text_c {
   margin-top: 16px;
   margin-bottom: 45px;
-  width: 780px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -447,15 +448,11 @@ hr {
 }
 
 .block__map {
-  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 @media (max-width: 1024px) {
-  .container {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
   .top__info {
     background-position: right center;
   }
@@ -480,6 +477,27 @@ hr {
 
   .footer__info {
     flex-direction: column;
+  }
+
+  .block__form {
+    width: 100%;
+    margin-top: 64px;
+  }
+
+  .block__form-contacts {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .block__contacts {
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .top__text_c {
+    margin-right: 124px;
+    margin-left: 124px;
+    width: 100%;
   }
 }
 
@@ -572,16 +590,12 @@ hr {
 
   .footer {
     padding-bottom: 32px;
-    margin-top: 64px;
+    margin-top: 47px;
   }
 
   .footer__top {
     flex-direction: column;
     padding-bottom: 41px;
-  }
-
-  .footer__text {
-    width: 100%;
   }
 
   .top__info {
@@ -605,7 +619,6 @@ hr {
   }
 
   .footer__button {
-    margin-left: 0;
     margin-top: 40px;
     padding: 15px 67px;
   }
@@ -617,5 +630,39 @@ hr {
   .footer__copy {
     text-align: center;
     margin-top: 32px;
+  }
+
+  .top_c {
+    height: 340px;
+  }
+
+  .header_c {
+    padding-top: 18px;
+  }
+
+  .top__info_c {
+    margin-top: 24px;
+  }
+
+  .block__form-contacts {
+    margin: 32px 0;
+  }
+
+  .block__contacts {
+    width: 100%;
+  }
+
+  .block__form {
+    padding: 35px;
+    height: 100%;
+  }
+
+  .text-area {
+    padding: 15px 25px;
+    margin: 5px 0px 20px;
+  }
+
+  form__text {
+    margin-bottom: 31px;
   }
 }
