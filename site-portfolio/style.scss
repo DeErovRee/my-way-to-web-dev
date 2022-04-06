@@ -1,7 +1,10 @@
 $screenWidth: 1140px;
 $borderSize: 1px;
-$checkPointWidth: 50px;
-$roadMap_itemHeight: 70px;
+$roadMap_borderSize: 3px;
+$checkPoint_itemHeight: 50px;
+$circle_d: 30px;
+$checkPoint_symbol: '\2714';
+$checkPoint_symbol_notC: '\2716';
 
 * {
     margin: 0;
@@ -40,28 +43,28 @@ $roadMap_itemHeight: 70px;
 
         &_item {
             // border: $borderSize solid blue;
-            height: $roadMap_itemHeight;
+            height: $checkPoint_itemHeight;
             display: flex;
             align-items: center;
             
 
             &_checkPoint {
-                width: $roadMap_itemHeight;
+                width: $checkPoint_itemHeight;
                 height: 100%;
                 // border: $borderSize solid red;
                 position: relative;
 
                 .verticalLine {
-                    height: $roadMap_itemHeight;
+                    height: $checkPoint_itemHeight;
                     margin: 0 auto;
                     background-color: #00796B;
                     position: absolute;
-                    width: 5px;
-                    left: 30px;
+                    width: $roadMap_borderSize;
+                    left: ($checkPoint_itemHeight - $roadMap_borderSize) / 2;
 
                     &_start {
-                        top: $roadMap_itemHeight / 2;
-                        height: $roadMap_itemHeight / 2;
+                        top: $checkPoint_itemHeight / 2;
+                        height: $checkPoint_itemHeight / 2;
                     }
 
                     &_middle {
@@ -72,33 +75,42 @@ $roadMap_itemHeight: 70px;
                     }
 
                     &_end {
-                        height: $roadMap_itemHeight / 2;
+                        height: $checkPoint_itemHeight / 2;
                         background-color: #9e9e9e;
                     }
                 }
 
                 .circle {
-                    top: 17px;
-                    left: 17px;
-                    height: 30px;
-                    width: 30px;
+                    top: ($checkPoint_itemHeight - $circle_d) / 2;
+                    left: ($checkPoint_itemHeight - $circle_d) / 2;
+                    margin: 0 auto;
+                    height: $circle_d;
+                    width: $circle_d;
                     background-color: #80CBC4;
-                    border-radius: 30px;
+                    border-radius: $circle_d;
                     position: absolute;
                     text-align: center;
-                    border: 5px solid #00796B;
+                    border: $roadMap_borderSize solid #00796B;
                     display: table;
 
                     &_notC {
-                        border: 5px solid #9e9e9e;
+                        border: $roadMap_borderSize solid #9e9e9e;
                         background-color: rgb(220, 220, 220);
                     }
 
-                    p {
+                    &_symbol {
+                        width: 100%;
                         vertical-align: middle;
                         display: table-cell;
-                        margin: 0 0;
-                        padding: 0 0;
+                        padding-bottom: 2px;
+
+                        &::before {
+                            content: $checkPoint_symbol;
+                        }
+
+                        &_notC::before {
+                            content: $checkPoint_symbol_notC;
+                        }
                     }
                 }
             }
