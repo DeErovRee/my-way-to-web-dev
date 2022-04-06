@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  border: 1px solid black;
+  height: 200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content {
+  border: 1px solid black;
+  height: 400px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content .roadMap {
+  width: 100%;
+  border: 1px solid darkblue;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content .roadMap_item {
+  border: 1px solid blue;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content .roadMap_item_checkPoint {
+  width: 70px;
+  height: 100%;
+  border: 1px solid red;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content .roadMap_item_checkPoint .verticalLine {
+  left: 30px;
+  width: 5px;
+  height: 66px;
+  margin: 0 auto;
+  background-color: #00ce00;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content .roadMap_item_content {
+  width: 100%;
+  height: 100%;
+  border: 1px solid purple;
+}
+
+.footer {
+  border: 1px solid black;
+  height: 200px;
+}
+/*# sourceMappingURL=style.css.map */

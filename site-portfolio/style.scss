@@ -1,0 +1,75 @@
+$screenWidth: 1140px;
+$borderSize: 1px;
+$checkPointWidth: 50px;
+$roadMap_itemHeight: 70px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: $screenWidth;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+}
+
+.header {
+    border: $borderSize solid black;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.content {
+    border: $borderSize solid black;
+    height: 400px;
+    box-sizing: border-box;
+
+    .roadMap {
+        width: 100%;
+        border: $borderSize solid darkblue;
+        height: 100%;
+        box-sizing: border-box;
+
+        &_item {
+            border: $borderSize solid blue;
+            height: $roadMap_itemHeight;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            
+
+            &_checkPoint {
+                width: $roadMap_itemHeight;
+                height: 100%;
+                border: $borderSize solid red;
+                position: relative;
+                box-sizing: border-box;
+
+                .verticalLine {
+                    left: 30px;
+                    width: 5px;
+                    height: $roadMap_itemHeight - 4 * $borderSize;
+                    margin: 0 auto;
+                    background-color: #00ce00;
+                    position: absolute;
+                    box-sizing: border-box;
+                }
+            }
+
+            &_content {
+                width: 100%;
+                height: 100%;
+                border: $borderSize solid purple;
+            }
+        }
+    }
+}
+
+.footer {
+    border: $borderSize solid black;
+    height: 200px;
+}
