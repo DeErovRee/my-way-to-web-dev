@@ -14,57 +14,96 @@ $roadMap_itemHeight: 70px;
     margin: 0 auto;
     padding-left: 32px;
     padding-right: 32px;
-    box-sizing: border-box;
 }
 
 .header {
     border: $borderSize solid black;
-    height: 200px;
-    box-sizing: border-box;
+
+    .menu {
+        padding: 32px 0;
+
+        &_list {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
 }
 
 .content {
     border: $borderSize solid black;
-    height: 400px;
-    box-sizing: border-box;
 
     .roadMap {
         width: 100%;
-        border: $borderSize solid darkblue;
+        // border: $borderSize solid darkblue;
         height: 100%;
-        box-sizing: border-box;
 
         &_item {
-            border: $borderSize solid blue;
+            // border: $borderSize solid blue;
             height: $roadMap_itemHeight;
             display: flex;
             align-items: center;
-            box-sizing: border-box;
             
 
             &_checkPoint {
                 width: $roadMap_itemHeight;
                 height: 100%;
-                border: $borderSize solid red;
+                // border: $borderSize solid red;
                 position: relative;
-                box-sizing: border-box;
 
                 .verticalLine {
-                    left: 30px;
-                    width: 5px;
-                    height: $roadMap_itemHeight - 4 * $borderSize;
+                    height: $roadMap_itemHeight;
                     margin: 0 auto;
-                    background-color: #00ce00;
+                    background-color: #00796B;
                     position: absolute;
-                    box-sizing: border-box;
+                    width: 5px;
+                    left: 30px;
+
+                    &_start {
+                        top: $roadMap_itemHeight / 2;
+                        height: $roadMap_itemHeight / 2;
+                    }
+
+                    &_middle {
+
+                        &_notC {
+                            background-color: #9e9e9e;
+                        }
+                    }
+
+                    &_end {
+                        height: $roadMap_itemHeight / 2;
+                        background-color: #9e9e9e;
+                    }
+                }
+
+                .circle {
+                    top: 17px;
+                    left: 17px;
+                    height: 30px;
+                    width: 30px;
+                    background-color: #80CBC4;
+                    border-radius: 30px;
+                    position: absolute;
+                    text-align: center;
+                    border: 5px solid #00796B;
+                    display: table;
+
+                    &_notC {
+                        border: 5px solid #9e9e9e;
+                        background-color: rgb(220, 220, 220);
+                    }
+
+                    p {
+                        vertical-align: middle;
+                        display: table-cell;
+                        margin: 0 0;
+                        padding: 0 0;
+                    }
                 }
             }
 
-            &_content {
-                width: 100%;
-                height: 100%;
-                border: $borderSize solid purple;
-            }
+            &_content {}
         }
     }
 }
