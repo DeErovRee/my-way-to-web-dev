@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +40,7 @@
 }
 
 .content .roadMap_item {
-  height: 70px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,23 +50,23 @@
 }
 
 .content .roadMap_item_checkPoint {
-  width: 70px;
+  width: 50px;
   height: 100%;
   position: relative;
 }
 
 .content .roadMap_item_checkPoint .verticalLine {
-  height: 70px;
+  height: 50px;
   margin: 0 auto;
   background-color: #00796B;
   position: absolute;
-  width: 5px;
-  left: 30px;
+  width: 3px;
+  left: 23.5px;
 }
 
 .content .roadMap_item_checkPoint .verticalLine_start {
-  top: 35px;
-  height: 35px;
+  top: 25px;
+  height: 25px;
 }
 
 .content .roadMap_item_checkPoint .verticalLine_middle_notC {
@@ -73,33 +74,42 @@
 }
 
 .content .roadMap_item_checkPoint .verticalLine_end {
-  height: 35px;
+  height: 25px;
   background-color: #9e9e9e;
 }
 
 .content .roadMap_item_checkPoint .circle {
-  top: 17px;
-  left: 17px;
+  top: 10px;
+  left: 10px;
+  margin: 0 auto;
   height: 30px;
   width: 30px;
   background-color: #80CBC4;
   border-radius: 30px;
   position: absolute;
   text-align: center;
-  border: 5px solid #00796B;
+  border: 3px solid #00796B;
   display: table;
 }
 
 .content .roadMap_item_checkPoint .circle_notC {
-  border: 5px solid #9e9e9e;
+  border: 3px solid #9e9e9e;
   background-color: gainsboro;
 }
 
-.content .roadMap_item_checkPoint .circle p {
+.content .roadMap_item_checkPoint .circle_symbol {
+  width: 100%;
   vertical-align: middle;
   display: table-cell;
-  margin: 0 0;
-  padding: 0 0;
+  padding-bottom: 2px;
+}
+
+.content .roadMap_item_checkPoint .circle_symbol::before {
+  content: "✔";
+}
+
+.content .roadMap_item_checkPoint .circle_symbol_notC::before {
+  content: "✖";
 }
 
 .footer {
