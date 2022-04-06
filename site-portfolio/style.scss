@@ -2,9 +2,15 @@ $screenWidth: 1140px;
 $borderSize: 1px;
 $roadMap_borderSize: 3px;
 $checkPoint_itemHeight: 50px;
+<<<<<<< HEAD
 $checkPoint_symbol: '\2714';
 $checkPoint_symbol_notC: '\2716';
 $circle_d: 30px;
+=======
+$circle_d: 30px;
+$checkPoint_symbol: '\2714';
+$checkPoint_symbol_notC: '\2716';
+>>>>>>> a935292... Fix bug in road map
 
 * {
     margin: 0;
