@@ -23,13 +23,38 @@ $circle_d: 30px;
     border: $borderSize solid black;
 
     .menu {
-        padding: 32px 0;
+        display: flex;
+        justify-content: space-between;
 
-        &_list {
+        &_left {
             list-style-type: none;
             display: flex;
-            justify-content: space-around;
+            margin: 8px;
+            padding: 8px;
         }
+
+        &_right {
+            list-style-type: none;
+            display: flex;
+            margin: 8px;
+            padding: 8px;
+        }
+
+        &_item {
+            margin: 0 16px;
+        }
+    }
+}
+
+.CV {
+    border: $borderSize solid black;
+
+    &_head {
+        display: flex;
+    }
+
+    .article {
+        margin-left: 16px;
     }
 }
 
@@ -123,4 +148,20 @@ $circle_d: 30px;
 .footer {
     border: $borderSize solid black;
     height: 200px;
+}
+
+//Стили для всего текста
+h1, h2 {
+    margin: 16px 0px 8px;
+}
+
+.p {
+    
+    &_CV {
+        margin: 0px 0px 16px;
+    }
+
+    &_roadMap {
+
+    }
 }
