@@ -143,6 +143,24 @@ $circle_d: 30px;
             &_content {}
         }
     }
+
+    .projects {
+        
+        .project_item1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .project_item2 {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        .project_img {
+            width: 30%;
+        }
+    }
 }
 
 .footer {
