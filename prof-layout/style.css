@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.top {
+  background-color: #222222;
+}
+
+.top .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.top .menu_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top .menu_left_item {
+  margin-right: 41px;
+}
+
+.top .menu_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top .menu_right_item {
+  margin-left: 33px;
+}
+
+.top_bottom {
+  background-color: #F1E4E6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.top_bottom .poster {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top_bottom .poster_left {
+  width: 50%;
+  background-image: url(/prof-layout/images/poster_man.png);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+
+.top_bottom .poster_img {
+  width: 100%;
+}
+
+.top_bottom .poster_right {
+  width: 50%;
+  padding: 0 auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.top_bottom .poster_right_text {
+  border-left: 12px solid #F16D7F;
+  padding-left: 16px;
+}
+
+.top_bottom .poster_right_text_h1 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.top_bottom .poster_right_text_h3 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 44px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.top_bottom .poster_right_text_h3 .colortext {
+  color: #F16D7F;
+}
+/*# sourceMappingURL=style.css.map */

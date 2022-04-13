@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.top {
+    background-color: #222222;
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 20px;
+
+        &_left {
+            display: flex;
+            align-items: center;
+
+
+            &_item {
+                margin-right: 41px;
+            }
+        }
+
+        &_right {
+            display: flex;
+            align-items: center;
+
+            &_item {
+                margin-left: 33px;
+            }
+        }
+    }
+}
+
+.top_bottom {
+    background-color: #F1E4E6;
+    box-sizing: border-box;
+
+    .poster {
+        display: flex;
+        justify-content: space-between;
+
+        &_left {
+            width: 50%;
+            background-image: url(/prof-layout/images/poster_man.png);
+            background-position: left;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 800px;
+        }
+
+        &_img {
+            width: 100%;
+        }
+
+        &_right {
+            width: 50%;
+            padding: 0 auto;
+            align-self: center;
+
+            &_text {
+                border-left: 12px solid #F16D7F;
+                padding-left: 16px;
+
+                &_h1 {
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 48px;
+                    line-height: 58px;
+                    color: #222222;
+                    text-transform: uppercase;
+                }
+    
+                &_h3 {
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 37px;
+                    line-height: 44px;
+                    color: #222222;
+                    text-transform: uppercase;
+
+                    .colortext {
+                        color: #F16D7F;
+                    }
+                }
+            }
+        }
+    }
+}
