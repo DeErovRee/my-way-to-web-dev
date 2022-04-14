@@ -1,3 +1,5 @@
+$screenWidth: 1600px;
+
 * {
     padding: 0;
     margin: 0;
@@ -69,31 +71,123 @@
             &_text {
                 border-left: 12px solid #F16D7F;
                 padding-left: 16px;
-
-                &_h1 {
-                    font-family: 'Lato';
-                    font-style: normal;
-                    font-weight: 900;
-                    font-size: 48px;
-                    line-height: 58px;
-                    color: #222222;
-                    text-transform: uppercase;
-                }
-    
-                &_h3 {
-                    font-family: 'Lato';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 37px;
-                    line-height: 44px;
-                    color: #222222;
-                    text-transform: uppercase;
-
-                    .colortext {
-                        color: #F16D7F;
-                    }
-                }
             }
         }
+    }
+}
+
+.middle {
+
+    .categories {
+        padding-top: 65px;
+
+        &_items {
+            display: flex;
+            flex-direction: column;
+
+            &_small {
+                height: 360px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+
+                .card_text {
+                    width: 160px;
+                    align-self: center;
+                    text-align: center;
+                }
+
+                p {
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 19px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    text-transform: uppercase;
+                }
+
+
+                .card_small_women {
+                    width: $screenWidth / 3;
+                    background-image: url(/prof-layout/images/women.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .card_small_men {
+                    width: $screenWidth / 3;
+                    background-image: url(/prof-layout/images/men.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .card_small_kids {
+                    width: $screenWidth / 3;
+                    background-image: url(/prof-layout/images/kids.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            &_big {
+                height: 180px;
+                width: 100%;
+                background-image: url(/prof-layout/images/accesories.png);
+            }
+        }   
+    }
+}
+
+.colortext {
+    color: #F16D7F;
+}
+
+.text_h1 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+    text-transform: uppercase;
+
+    &_cat {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 16px;
+        color: #222222;
+        text-transform: uppercase;
+    }
+}
+
+.text_h3 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 44px;
+    color: #222222;
+    text-transform: uppercase;
+
+    &_cat {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+        text-transform: uppercase;
     }
 }
