@@ -206,6 +206,14 @@ $margin: 32px;
                             justify-content: center;
                             align-items: center;
                             cursor: pointer;
+
+                            font-family: 'Lato';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #FFFFFF;
+                            margin-left: 11px;
                         }
 
                         .cart_img {
@@ -346,6 +354,8 @@ $margin: 32px;
     }
 
     .copy {
+        max-width: 1440px;
+        margin: 0 auto;
         display: flex;
         padding-top: 24px;
         padding-bottom: 24px;

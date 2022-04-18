@@ -278,6 +278,13 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-left: 11px;
 }
 
 .middle .fetured .card_items .card .img .hover .cart_img {
@@ -463,6 +470,8 @@
 }
 
 .bottom .copy {
+  max-width: 1440px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
