@@ -1,4 +1,4 @@
-$screenWidth: 1140px;
+$screenWidth: 1160px;
 $margin: 32px;
 
 * {
@@ -88,7 +88,6 @@ $margin: 32px;
             flex-direction: column;
 
             &_small {
-                height: 360px;
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 30px;
@@ -107,38 +106,36 @@ $margin: 32px;
 
                 .card_small_women {
                     width: $screenWidth / 3;
-                    background-image: url(/prof-layout/images/women.png);
-                    background-repeat: no-repeat;
-                    background-size: cover;
                     display: flex;
                     justify-content: center;
+                    position: relative;
+                    
                 }
 
                 .card_small_men {
                     width: $screenWidth / 3;
-                    background-image: url(/prof-layout/images/men.png);
-                    background-repeat: no-repeat;
-                    background-size: cover;
                     margin-left: 30px;
                     margin-right: 30px;
                     display: flex;
                     justify-content: center;
+                    position: relative;
                 }
 
                 .card_small_kids {
                     width: $screenWidth / 3;
-                    background-image: url(/prof-layout/images/kids.png);
-                    background-repeat: no-repeat;
-                    background-size: cover;
                     display: flex;
                     justify-content: center;
+                    position: relative;
                 }
             }
 
             &_big {
-                height: 180px;
                 width: 100%;
-                background-image: url(/prof-layout/images/accesories.png);
+                position: relative;
+            }
+
+            img {
+                width: 100%;
             }
 
             .card_text {
@@ -150,6 +147,8 @@ $margin: 32px;
                 flex-direction: column;
                 justify-content: center;
                 background: rgba(33, 22, 22, 0.7);
+                position: absolute;
+                top: 0;
             }
         }   
     }
@@ -278,7 +277,7 @@ $margin: 32px;
     .subs-and-prom {
         max-width: 1600px;
         margin: 0 auto;
-        background-image: url(/prof-layout/images/bg_footer.png);
+        background-image: url(images/bg_footer.png);
         display: flex;
         justify-content: center;
 
@@ -558,5 +557,93 @@ $margin: 32px;
         font-size: 16px;
         line-height: 19px;
         color: #FBFBFB;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .menu {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .middle .categories_items_small .card_small_men {
+        margin-left: 19px;
+        margin-right: 19px;
+    }
+
+    .middle .categories_items_small {
+        margin-bottom: 20px;
+    }
+    .middle .fetured .card_items .card:nth-child(3n+2) {
+        margin: 0px 0px 0px;
+    }
+
+    .middle .fetured .card_items .card:nth-child(1n+2) {
+        margin: 16px 0px 0px 0px;
+    }
+
+    .middle .fetured .card_items .card:nth-child(2n+2) {
+        margin: 16px 0px 0px 16px;
+    }
+
+    .middle .fetured .card_items .card {
+        margin: 16px 0px 0px;
+    }
+
+    .middle .button .button_all-prod {
+        margin: 33px 0 0;
+    }
+
+    .bottom .benefits {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        padding-top: 48px;
+        padding-bottom: 64px;
+        margin-top: 65px;
+    }
+
+    .bottom .benefits .bf_card:nth-child(2) {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 49px;
+        margin-bottom: 49px;
+    }
+
+    .text_h3_bf {
+        margin-top: 19px;
+    }
+
+    .bottom .subs-and-prom .smoth {
+        padding-top: 64px;
+        padding-bottom: 140px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom .subs-and-prom_right {
+        padding-top: 48px;
+    }
+
+    .bottom .subs-and-prom {
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bottom .copy .copy_left {
+        justify-content: flex-start;
+        margin-left: 32px;
+    }
+
+    .bottom .copy .copy_right {
+        justify-content: flex-end;
+        margin-right: 32px;
     }
 }

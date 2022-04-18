@@ -108,7 +108,6 @@
 }
 
 .middle .categories_items_small {
-  height: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,23 +129,18 @@
 }
 
 .middle .categories_items_small .card_small_women {
-  width: 380px;
-  background-image: url(/prof-layout/images/women.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 386.66667px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .middle .categories_items_small .card_small_men {
-  width: 380px;
-  background-image: url(/prof-layout/images/men.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 386.66667px;
   margin-left: 30px;
   margin-right: 30px;
   display: -webkit-box;
@@ -155,25 +149,27 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .middle .categories_items_small .card_small_kids {
-  width: 380px;
-  background-image: url(/prof-layout/images/kids.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 386.66667px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .middle .categories_items_big {
-  height: 180px;
   width: 100%;
-  background-image: url(/prof-layout/images/accesories.png);
+  position: relative;
+}
+
+.middle .categories_items img {
+  width: 100%;
 }
 
 .middle .categories_items .card_text {
@@ -193,6 +189,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   background: rgba(33, 22, 22, 0.7);
+  position: absolute;
+  top: 0;
 }
 
 .middle .fetured .text {
@@ -220,7 +218,7 @@
 }
 
 .middle .fetured .card_items .card {
-  width: 358.66667px;
+  width: 365.33333px;
   background: #F8F8F8;
   margin: 30px 0 0;
 }
@@ -335,7 +333,7 @@
 }
 
 .bottom .benefits .bf_card {
-  width: 358.66667px;
+  width: 365.33333px;
   height: 134px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -360,7 +358,7 @@
 .bottom .subs-and-prom {
   max-width: 1600px;
   margin: 0 auto;
-  background-image: url(/prof-layout/images/bg_footer.png);
+  background-image: url(images/bg_footer.png);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -688,5 +686,92 @@
   font-size: 16px;
   line-height: 19px;
   color: #FBFBFB;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .menu {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .middle .categories_items_small .card_small_men {
+    margin-left: 19px;
+    margin-right: 19px;
+  }
+  .middle .categories_items_small {
+    margin-bottom: 20px;
+  }
+  .middle .fetured .card_items .card:nth-child(3n+2) {
+    margin: 0px 0px 0px;
+  }
+  .middle .fetured .card_items .card:nth-child(1n+2) {
+    margin: 16px 0px 0px 0px;
+  }
+  .middle .fetured .card_items .card:nth-child(2n+2) {
+    margin: 16px 0px 0px 16px;
+  }
+  .middle .fetured .card_items .card {
+    margin: 16px 0px 0px;
+  }
+  .middle .button .button_all-prod {
+    margin: 33px 0 0;
+  }
+  .bottom .benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 48px;
+    padding-bottom: 64px;
+    margin-top: 65px;
+  }
+  .bottom .benefits .bf_card:nth-child(2) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 49px;
+    margin-bottom: 49px;
+  }
+  .text_h3_bf {
+    margin-top: 19px;
+  }
+  .bottom .subs-and-prom .smoth {
+    padding-top: 64px;
+    padding-bottom: 140px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bottom .subs-and-prom_right {
+    padding-top: 48px;
+  }
+  .bottom .subs-and-prom {
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bottom .copy .copy_left {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 32px;
+  }
+  .bottom .copy .copy_right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 32px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
