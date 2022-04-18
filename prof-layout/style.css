@@ -351,6 +351,8 @@
 }
 
 .bottom .subs-and-prom {
+  max-width: 1600px;
+  margin: 0 auto;
   background-image: url(/prof-layout/images/bg_footer.png);
   display: -webkit-box;
   display: -ms-flexbox;
