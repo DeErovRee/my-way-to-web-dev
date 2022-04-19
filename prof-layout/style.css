@@ -36,6 +36,7 @@
 
 .top .menu_left_item {
   margin-right: 41px;
+  cursor: pointer;
 }
 
 .top .menu_right {
@@ -49,6 +50,7 @@
 
 .top .menu_right_item {
   margin-left: 33px;
+  cursor: pointer;
 }
 
 .top_bottom {
@@ -218,7 +220,7 @@
 }
 
 .middle .fetured .card_items .card {
-  width: 365.33333px;
+  width: 360px;
   background: #F8F8F8;
   margin: 30px 0 0;
 }
@@ -236,6 +238,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  width: 360px;
+  height: 420px;
 }
 
 .middle .fetured .card_items .card .img .hover {
@@ -287,10 +291,6 @@
 
 .middle .fetured .card_items .card .img .hover .cart_img {
   height: 25px;
-}
-
-.middle .fetured .card_items .card .img img {
-  height: 420px;
 }
 
 .middle .button {
@@ -732,6 +732,9 @@
     padding-top: 48px;
     padding-bottom: 64px;
     margin-top: 65px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .bottom .benefits .bf_card:nth-child(2) {
     margin-left: 0;
