@@ -10,6 +10,7 @@ $circle_d: 30px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif, "Lato";
 }
 
 .container {
@@ -20,7 +21,6 @@ $circle_d: 30px;
 }
 
 .header {
-    border: $borderSize solid black;
 
     .menu {
         display: flex;
@@ -41,13 +41,22 @@ $circle_d: 30px;
         }
 
         &_item {
-            margin: 0 16px;
+            height: 35px;
+            width: 80px;
+            border-radius: 7px;
+            margin: 0 8px;
+            padding: 8px;
+            background: #eee;
+            text-align: center;
         }
     }
 }
 
 .CV {
-    border: $borderSize solid black;
+    margin: 20px 0;
+    box-shadow: 0px 0px 20px 10px #eee;
+    border-radius: 20px;
+    padding: 10px;
 
     &_head {
         display: flex;
@@ -59,15 +68,17 @@ $circle_d: 30px;
 }
 
 .content {
-    border: $borderSize solid black;
+    
 
     .roadMap {
         width: 100%;
-        // border: $borderSize solid darkblue;
         height: 100%;
+        margin: 20px 0;
+        box-shadow: 0px 0px 20px 10px #eee;
+        border-radius: 20px;
+        padding: 10px;
 
         &_item {
-            // border: $borderSize solid blue;
             height: $checkPoint_itemHeight;
             display: flex;
             align-items: center;
@@ -76,7 +87,6 @@ $circle_d: 30px;
             &_checkPoint {
                 width: $checkPoint_itemHeight;
                 height: 100%;
-                // border: $borderSize solid red;
                 position: relative;
 
                 .verticalLine {
@@ -147,11 +157,19 @@ $circle_d: 30px;
     .projects {
         
         .project_item1 {
+            margin: 20px 0;
+            box-shadow: 0px 0px 20px 10px #eee;
+            border-radius: 20px;
+            padding: 10px;
             display: flex;
             justify-content: space-between;
         }
 
         .project_item2 {
+            margin: 20px 0;
+            box-shadow: 0px 0px 20px 10px #eee;
+            border-radius: 20px;
+            padding: 10px;
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
@@ -169,8 +187,13 @@ $circle_d: 30px;
 }
 
 //Стили для всего текста
-h1, h2 {
+h1, h2, h3 {
     margin: 16px 0px 8px;
+}
+
+.text_h3_roadMap {
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .p {
@@ -182,4 +205,17 @@ h1, h2 {
     &_roadMap {
 
     }
+}
+
+a {
+    text-decoration: none;
+
+    &:visited {
+        color: inherit;
+    }
+}
+
+img {
+    border: 1px solid #eee;
+    border-radius: 20px;
 }
