@@ -51,6 +51,14 @@
   text-align: center;
 }
 
+.CV {
+  margin: 20px 0;
+  -webkit-box-shadow: 0px 0px 20px 10px #eee;
+          box-shadow: 0px 0px 20px 10px #eee;
+  border-radius: 20px;
+  padding: 10px;
+}
+
 .CV_head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,6 +72,11 @@
 .content .roadMap {
   width: 100%;
   height: 100%;
+  margin: 20px 0;
+  -webkit-box-shadow: 0px 0px 20px 10px #eee;
+          box-shadow: 0px 0px 20px 10px #eee;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .content .roadMap_item {
@@ -140,6 +153,11 @@
 }
 
 .content .projects .project_item1 {
+  margin: 20px 0;
+  -webkit-box-shadow: 0px 0px 20px 10px #eee;
+          box-shadow: 0px 0px 20px 10px #eee;
+  border-radius: 20px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,6 +167,11 @@
 }
 
 .content .projects .project_item2 {
+  margin: 20px 0;
+  -webkit-box-shadow: 0px 0px 20px 10px #eee;
+          box-shadow: 0px 0px 20px 10px #eee;
+  border-radius: 20px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,5 +204,14 @@ h1, h2, h3 {
 
 .p_CV {
   margin: 0px 0px 16px;
+}
+
+a {
+  text-decoration: none;
+  color: none;
+}
+
+a:visited {
+  color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
