@@ -209,9 +209,13 @@ h1, h2, h3 {
 
 a {
     text-decoration: none;
-    color: none;
 
     &:visited {
         color: inherit;
     }
+}
+
+img {
+    border: 1px solid #eee;
+    border-radius: 20px;
 }
