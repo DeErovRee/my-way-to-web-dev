@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -325,6 +326,12 @@
 
 .bottom {
   background: #222224;
+}
+
+.bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .bottom .benefits {
@@ -684,6 +691,11 @@
 }
 
 .text_p_subs-and-prom {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
   width: 356px;
   text-align: center;
 }
