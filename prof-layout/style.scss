@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 $screenWidth: 1160px;
 $margin: 32px;
 
@@ -258,6 +260,10 @@ $margin: 32px;
 
 .bottom {
     background: #222224;
+
+    ul {
+        display: flex;
+    }
 
     .benefits {
         display: flex;
@@ -554,6 +560,11 @@ $margin: 32px;
     }
 
     &_subs-and-prom {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
         width: 356px;
         text-align: center;
     }
